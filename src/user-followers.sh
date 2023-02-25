@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source "src/util.sh"
+
 DATA_FILE="data/user-followers.csv"
 
 if [ ! -f "$DATA_FILE" ]; then
@@ -16,13 +18,4 @@ if [ ! -f "$DATA_FILE" ]; then
     echo 'done.'
 fi
 
-cat $DATA_FILE | st --complete
-echo
-
-PERCENTILES=('75' '90' '95' '99')
-
-for K in "${PERCENTILES[@]}"
-do
-    N=$(cat $DATA_FILE | st --percentile="$K")
-    echo -e "P$K\t$N"
-done
+render_data_file $DATA_FILE

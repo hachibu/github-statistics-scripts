@@ -20,5 +20,10 @@ sample_users() {
   echo "$RESULT"
 }
 
+sort_data_file() {
+  sort -g -o "$1"{,}
+}
+
 export -f render_data_file
 export -f sample_users
+export -f sort_data_file

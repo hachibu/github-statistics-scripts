@@ -5,10 +5,10 @@ set -euo pipefail
 source "src/util.sh"
 
 DATA_FILE="data/user-followers.csv"
-SAMPLE_SIZE=100
+SAMPLE_SIZE="${1:-100}"
 
 if [ ! -f "$DATA_FILE" ]; then
-    LOGINS=$(sample_users $SAMPLE_SIZE)
+    LOGINS=$(sample_users "$SAMPLE_SIZE")
     printf "Downloading data to %s" $DATA_FILE
     for LOGIN in $LOGINS
     do

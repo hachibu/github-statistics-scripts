@@ -3,8 +3,8 @@
 ## Requirements
 - [gh](https://github.com/cli/cli)
 - [st](https://github.com/nferraz/st)
-- [python](https://www.python.org/downloads)
-- [bashplotlib](https://github.com/glamp/bashplotlib)
+- [python3](https://www.python.org/downloads)
+  - [bashplotlib](https://github.com/glamp/bashplotlib)
 
 ## Usage
 

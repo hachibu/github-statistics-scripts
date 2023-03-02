@@ -2,7 +2,6 @@
 
 ## Requirements
 - [gh](https://github.com/cli/cli)
-- [jq](https://stedolan.github.io/jq)
 - [st](https://github.com/nferraz/st)
 
 ## Usage

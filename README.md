@@ -16,23 +16,23 @@ $ gh auth login
 ```
 $ ./src/user-followers.sh
 N       min     q1      median  q3      max     sum     mean    stddev  stderr  variance
-30      1       95.5    563.5   1338.5  23360   79873   2662.43 5848.89 1067.86 3.42096e+07
+100     1       1       3       12.5    415     2236    22.36   59.3823 5.93823 3526.25
 
-P75     1338.5
-P90     9152.5
-P95     15835
-P99     22473
+P75     12.5
+P90     46
+P95     132
+P99     347.5
 ```
 
 ### User Total Contributions
 
 ```
 $ ./src/user-total-contributions.sh
-N min     q1      median  q3      max     sum     mean    stddev  stderr  variance
-27      0       1       35      461     1845    7046    260.963 424.644 81.7228 180323
+N       min     q1      median  q3      max     sum     mean    stddev  stderr  variance
+100     0       0       0       9.5     4369    13810   138.1   522.336 52.2336 272834
 
-P75     461
-P90     741.5
-P95     819
-P99     1342.5
+P75     9.5
+P90     297
+P95     855
+P99     3271.5
 ```

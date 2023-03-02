@@ -15,4 +15,10 @@ render_data_file() {
   done
 }
 
+sample_users() {
+  RESULT=$(sort -R "data/users.csv" | head -"$1")
+  echo "$RESULT"
+}
+
 export -f render_data_file
+export -f sample_users

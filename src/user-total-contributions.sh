@@ -5,9 +5,10 @@ set -euo pipefail
 source "src/util.sh"
 
 DATA_FILE="data/user-total-contributions.csv"
+SAMPLE_SIZE=100
 
 if [ ! -f "$DATA_FILE" ]; then
-    LOGINS=$(gh api users --cache 1h | jq -r '.[].login')
+    LOGINS=$(sample_users $SAMPLE_SIZE)
     printf "Downloading data to %s" $DATA_FILE
     for LOGIN in $LOGINS
     do

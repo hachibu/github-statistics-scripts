@@ -1,5 +1,7 @@
 # GitHub Statistics Scripts
 
+A collection of scripts to generate GitHub user activity distributions.
+
 ## Requirements
 - [gh](https://github.com/cli/cli)
 - [st](https://github.com/nferraz/st)

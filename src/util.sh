@@ -14,7 +14,7 @@ render_data_file() {
       echo -e "P$K\t$N"
   done
 
-  ./src/histogram.py "$1"
+  ./src/render-histogram.py "$1"
 }
 
 sample_users() {
